@@ -10,5 +10,4 @@ main:
 	ldr r0, =text
 	bl printf
 	mov r0, #0x0
-	ldmfd sp!, {lr} @epilogue
-	mov pc, lr @return
+	ldmfd sp!, {pc} @epilogue and return
